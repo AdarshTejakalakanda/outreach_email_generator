@@ -1,4 +1,4 @@
-# AI Outreach Generator (Qwen 2.5 Edition)
+# AI Outreach Generator (Qwen 3 Edition)
 
 An automated recruiter outreach engine that filters and generates hyper-personalized emails for AI/ML roles using local LLMs (Ollama).
 
@@ -20,9 +20,9 @@ pip install -r requirements.txt
 ```
 
 ### 3. Setup Ollama
-Download and run the Qwen 2.5 7B model (optimal for speed/quality on local hardware):
+Download and run the Qwen 3 8B model (optimal for speed/quality on local hardware):
 ```bash
-ollama pull qwen2.5:7b
+ollama pull qwen3:8b
 ```
 
 ### 4. Prepare Your Files
@@ -40,7 +40,7 @@ The script will:
 2.  **Generate**: Call Qwen 2.5 7B to draft a catchy subject and a 3-paragraph personalized body.
 3.  **Export**: Save results to `outreach_queue.csv` in real-time (every 10 rows).
 
-## 🧠 Why Qwen2.5 for Recruitment?
+## 🧠 Why Qwen3 for Recruitment?
 - **Dual-Mode Intelligence**: Toggles between "Thinking" (for high-quality, complex email drafting) and "Non-thinking" (for lightning-fast processing).
 - **Agentic Native**: Specifically fine-tuned for tool-calling and autonomous workflows, ensuring perfect adherence to JSON output constraints.
 - **40K+ Context Window**: Handles even the longest job descriptions without losing context from your resume.
